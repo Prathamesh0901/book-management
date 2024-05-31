@@ -4,6 +4,9 @@ Welcome to
 
 Hirademy Books is a mini frontend application built with React.js to display a list of books and their details. The application uses component-based architecture, dynamic data loading from APIs, and includes pagination functionality for easy navigation between book pages.
 
+## Demo
+You can access a live demo of the application deployed on Vercel [here](https://book-management-bay.vercel.app/).
+
 ## Table of Contents
 - [Features](#features)
 - [Technology Stack](#technology-stack)
