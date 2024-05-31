@@ -12,7 +12,7 @@ export default function BookDetailsPage() {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
 
-  const BOOK_URL = "http://softwium.com/api/books";
+  const BOOK_URL = "//softwium.com/api/books";
 
   useEffect(() => {
     const fetchBook = async () => {

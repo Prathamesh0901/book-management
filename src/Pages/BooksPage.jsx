@@ -8,7 +8,7 @@ import './Styles/BooksPage.css'
 
 export default function BooksPage() {
 
-    const BOOK_URL = 'http://softwium.com/api/books';
+    const BOOK_URL = '//softwium.com/api/books';
 
     const [books, setBooks] = useState([]);
     const [currentPage, setCurrentPage] = useState(1);
