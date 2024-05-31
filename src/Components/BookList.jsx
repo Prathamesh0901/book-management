@@ -4,9 +4,7 @@ import { convertISBN10to13 } from '../helper';
 export default function BookList({ books }) {
 
     books.forEach(async (book) => {
-        book.isbn = convertISBN10to13(book.isbn);
-        console.log(book.isbn);
-        book.image_url = `https://covers.openlibrary.org/b/isbn/${book.isbn}-M.jpg`;
+        book.image_url = book.isbn === convertISBN10to13(book.isbn) ? null : `https://covers.openlibrary.org/b/isbn/${convertISBN10to13(book.isbn)}-M.jpg`;
         console.log(book.image_url);
     });
 

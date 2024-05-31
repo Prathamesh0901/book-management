@@ -20,8 +20,8 @@ export default function BookDetailsPage() {
         let response = await fetch(`${BOOK_URL}/${id}`);
         let data = await response.json();
         data.authors = data.authors.map((author, index) => (<li key={index}>{author}</li>));
-        data.isbn = convertISBN10to13(data.isbn);
-        data.image_url = `https://covers.openlibrary.org/b/isbn/${data.isbn}-M.jpg`;
+        book.image_url = book.isbn === convertISBN10to13(book.isbn) ? null : `https://covers.openlibrary.org/b/isbn/${convertISBN10to13}-M.jpg`;
+        console.log(book.isbn);
         setBook(data);
         setLoading(false);
       } catch (error) {
@@ -41,15 +41,15 @@ export default function BookDetailsPage() {
       <Header />
       <h1 style={{backgroundColor: "rgb(192 192 192)"}}>Details of Book: {book.title}</h1>
       <div className="BookDetails">
-        {book.image_url && (
+        {book.image_url&&
           <div className="bookimage">
             <img src={book.image_url} alt={book.title} />
           </div>
-        )}
+        }
         <div className="details">
-          <p><strong>ISBN:</strong> {book.isbn}</p>
-          <p><strong>Page Count:</strong> {book.pageCount}</p>
-          <p><strong>Authors:</strong> <ol>{book.authors}</ol></p>
+          {book.isbn && <p><strong>ISBN:</strong> {book.isbn}</p>}
+          {book.pageCount && <p><strong>Page Count:</strong> {book.pageCount}</p>}
+          {book.authors && <p><strong>Authors:</strong> <ol>{book.authors}</ol></p>}
         </div>
       </div>
     </>
