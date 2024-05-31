@@ -1,6 +1,6 @@
 export function convertISBN10to13(isbn10) {
     if (!/^\d{9}[\dX]$/.test(isbn10)) {
-      throw new Error('Invalid ISBN-10 format');
+      return isbn10;
     }
   
     isbn10 = isbn10.replace(/-/g, '');
