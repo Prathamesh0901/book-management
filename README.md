@@ -23,7 +23,7 @@ Hirademy Books is a mini frontend application built with React.js to display a l
 - **Frontend Framework**: React.js
 - **CSS Framework**: Custom CSS with responsive design principles
 - **API Testing**: Postman
-- **Deployment**: Netlify
+- **Deployment**: Vercel
 
 ## Installation
 
@@ -31,8 +31,8 @@ To run this project locally, follow these steps:
 
 1. Clone the repository:
    ```sh
-   git clone https://github.com/Prathamesh0901/assignment.git
-   cd assignment
+   git clone https://github.com/Prathamesh0901/book-management.git
+   cd book-management
    ```
 
 2. Install dependencies:
