@@ -1,0 +1,20 @@
+.backbtn, .forwardbtn {
+    height: 5rem;
+    width: 5rem;
+    border-radius: 50%;
+    text-align: center;
+    border: none;
+    box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.236);;
+}
+
+.backbtn {
+    position: relative;
+    top: -15rem;
+    left: 5rem;
+}
+
+.forwardbtn {
+    position: relative;
+    top: -15rem;
+    right: -80rem;
+}

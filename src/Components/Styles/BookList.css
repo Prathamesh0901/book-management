@@ -1,0 +1,49 @@
+.BookList {
+    height: 75%;
+    width: 30%;
+    position: relative;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    column-gap: 1rem;
+    row-gap: 0.5rem;
+}
+
+.Book {
+    height: 115px;
+    width: 103.2px;
+    background-color: #fff;
+    text-align: center;
+    margin-top: 20px;
+    z-index: 0.5;
+}
+
+.Book a {
+    color: black;
+    text-decoration: none;
+}
+
+.Book img {
+    position: relative;
+    width: 103.2px;
+    height: 115px;
+    object-fit: cover;
+    box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.236);
+}
+
+.b0, .b1, .b2, .b3 {
+    margin-top: 29px;
+}
+
+.b4, .b5, .b6, .b7 {
+    margin-bottom: 10px;
+}
+
+.b8, .b9, .b10, .b11 {
+    margin-top: 5px;
+}
+
+.b12, .b13, .b14, .b15 {
+    margin-top: 10px;
+}
