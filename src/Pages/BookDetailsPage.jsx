@@ -41,10 +41,11 @@ export default function BookDetailsPage() {
       <Header />
       <h1 style={{backgroundColor: "rgb(192 192 192)"}}>Details of Book: {book.title}</h1>
       <div className="BookDetails">
-        {book.image_url&&
+        {book.image_url? 
           <div className="bookimage">
             <img src={book.image_url} alt={book.title} />
-          </div>
+          </div> :
+          <></>
         }
         <div className="details">
           {book.isbn && <p><strong>ISBN:</strong> {book.isbn}</p>}
