@@ -20,8 +20,7 @@ export default function BookDetailsPage() {
         let response = await fetch(`${BOOK_URL}/${id}`);
         let data = await response.json();
         data.authors = data.authors.map((author, index) => (<li key={index}>{author}</li>));
-        book.image_url = book.isbn === convertISBN10to13(book.isbn) ? null : `https://covers.openlibrary.org/b/isbn/${convertISBN10to13}-M.jpg`;
-        console.log(book.isbn);
+        data.image_url = data.isbn == convertISBN10to13(data.isbn) ? false : `https://covers.openlibrary.org/b/isbn/${convertISBN10to13(data.isbn)}-M.jpg`;
         setBook(data);
         setLoading(false);
       } catch (error) {
@@ -41,10 +40,10 @@ export default function BookDetailsPage() {
       <Header />
       <h1 style={{backgroundColor: "rgb(192 192 192)"}}>Details of Book: {book.title}</h1>
       <div className="BookDetails">
-        {book.image_url? 
+        {book.image_url?
           <div className="bookimage">
             <img src={book.image_url} alt={book.title} />
-          </div> :
+          </div>:
           <></>
         }
         <div className="details">
