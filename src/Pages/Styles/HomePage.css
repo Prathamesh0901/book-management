@@ -22,3 +22,21 @@
     width: 12rem;
     font-size: 1.5rem !important;
 }
+
+@media (max-width: 768px) {
+    .heading {
+        font-size: 3rem;
+    }
+    .content {
+        margin-left: 30%;
+    }
+}
+
+@media (max-width: 480px) {
+    .heading {
+        font-size: 2rem;
+    }
+    .content {
+        margin-left: 35%;
+    }
+}

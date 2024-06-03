@@ -18,3 +18,50 @@
     top: -15rem;
     right: -80rem;
 }
+
+
+@media (max-width: 1200px) {
+    .backbtn {
+        position: relative;
+        top: 7rem;
+        left: 5rem;
+    }
+    
+    .forwardbtn {
+        position: relative;
+        top: 7rem;
+        left: 50rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .backbtn {
+        position: relative;
+        top: 7rem;
+        left: 3.5rem;
+    }
+    
+    .forwardbtn {
+        position: relative;
+        top: 7rem;
+        left: 33.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .backbtn {
+        height: 4rem;
+        width: 4rem;
+        position: relative;
+        top: 12rem;
+        left: 2rem;
+    }
+    
+    .forwardbtn {
+        height: 4rem;
+        width: 4rem;
+        position: relative;
+        top: 12rem;
+        left: 20rem;
+    }
+}

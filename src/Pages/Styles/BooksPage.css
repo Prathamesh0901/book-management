@@ -9,3 +9,24 @@
     margin: 0 auto;
     background-color: rgb(192 192 192);
 }
+
+@media (max-width: 1200px) {
+    .book-item {
+        width: 120px;
+        height: 180px;
+    }
+}
+
+@media (max-width: 768px) {
+    .book-item {
+        width: 100px;
+        height: 150px;
+    }
+}
+
+@media (max-width: 480px) {
+    .book-item {
+        width: 80px;
+        height: 120px;
+    }
+}
